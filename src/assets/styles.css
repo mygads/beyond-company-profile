@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
 
 @theme {
-    --font-primary: 'Oswald', sans-serif;
+    --font-primary: 'Montserrat', sans-serif;
 }
 
 /* Add these styles to your global CSS file */

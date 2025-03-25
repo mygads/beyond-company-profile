@@ -1,5 +1,5 @@
 import type React from "react"
-import LogoIcon from "../../assets/images/logo_trd_bg.png"
+import LogoIcon from "../../assets/images/logo-beyond-bg.png"
 import { FaFacebookF, FaInstagram } from "react-icons/fa"
 
 const Footer: React.FC = () => {
