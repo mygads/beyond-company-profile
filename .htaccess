@@ -1,0 +1,19 @@
+# Menangani file XML dengan benar
+<IfModule mod_mime.c>
+    AddType application/xml .xml
+</IfModule>
+
+# Memastikan file statis tidak diarahkan ke index.html
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    
+    # Jangan arahkan sitemap.xml dan robots.txt
+    RewriteCond %{REQUEST_URI} !^/sitemap\.xml
+    RewriteCond %{REQUEST_URI} !^/robots\.txt
+    
+    # Hanya redirect ke index.html untuk yang bukan file/folder yang ada
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+</IfModule>
