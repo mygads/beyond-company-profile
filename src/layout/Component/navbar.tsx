@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
     }
 
     return (
-        <nav className="bg-[#636262] sticky top-0 z-50">
+        <nav className="bg-[#636262] sticky top-0 z-50 font-montserrat">
             <div className="container mx-auto flex items-center justify-between px-4 h-16 md:h-20">
                 <Link to="/" className="flex items-center space-x-2 md:space-x-3 group">
                     <img
