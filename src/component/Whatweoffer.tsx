@@ -98,7 +98,7 @@ const WhatWeOffer: React.FC = () => {
     }, [])
 
     return (
-        <section className="px-4 overflow-hidden">
+        <section className="pb-14 px-4 overflow-hidden">
             <div className="container mx-auto">
                 <div
                     ref={sectionRef}

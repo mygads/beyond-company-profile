@@ -1,4 +1,5 @@
 import { HomeBanner } from "../component/banner/HomeBanner"
+import TopValuesForYou from "../component/TopValuesForYou"
 import Whatweoffer from "../component/Whatweoffer"
 
 export const Home = () => {
@@ -6,6 +7,7 @@ export const Home = () => {
         <>
             <HomeBanner />
             <Whatweoffer />
+            <TopValuesForYou />
         </>
     )
 }
