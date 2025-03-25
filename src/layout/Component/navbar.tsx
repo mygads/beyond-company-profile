@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
                     <img
                         src={LogoIcon || "/placeholder.svg"}
                         alt="Beyond Dreams Tours Logo"
-                        className="md:h-14 h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+                        className="md:h-16 h-10 w-auto transition-transform duration-300 group-hover:scale-105"
                     />
                 </Link>
 

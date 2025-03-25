@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
 import Layout from './layout/layout';
-import { AboutUs } from './pages/AboutUs';
+import { About } from './pages/About';
 import { Services } from './pages/Services';
-import { Galery } from './pages/Galery';
-import { Review } from './pages/Review';
 import MetaTags from './component/MetaTags';
+import { Articles } from './pages/Articles';
+import { Partnership } from './pages/Partnership';
 
 export const App = () => {
     return (
@@ -17,8 +17,8 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="TRD Elite Services"
-                                    description="Welcome to TRD Elite Services - Your trusted partner for quality services"
+                                    title="Beyond Dreams Tours"
+                                    description="Welcome to Beyond Dreams Tours - Your trusted partner for quality services"
                                 />
                                 <Home />
                             </>
@@ -29,8 +29,8 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="TRD Elite Services"
-                                    description="Welcome to TRD Elite Services - Your trusted partner for quality services"
+                                    title="Beyond Dreams Tours"
+                                    description="Welcome to Beyond Dreams Tours - Your trusted partner for quality services"
                                 />
                                 <Home />
                             </>
@@ -41,22 +41,22 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="TRD Elite Services"
-                                    description="Welcome to TRD Elite Services - Your trusted partner for quality services"
+                                    title="Beyond Dreams Tours"
+                                    description="Welcome to Beyond Dreams Tours - Your trusted partner for quality services"
                                 />
                                 <Home />
                             </>
                         }
                     />
                     <Route
-                        path="/about-us"
+                        path="/about"
                         element={
                             <>
                                 <MetaTags 
                                     title="About Us"
-                                    description="Learn more about TRD Elite Services"
+                                    description="Learn more about Beyond Dreams Tours"
                                 />
-                                <AboutUs />
+                                <About />
                             </>
                         }
                     />
@@ -66,33 +66,34 @@ export const App = () => {
                             <>
                                 <MetaTags 
                                     title="Services"
-                                    description="Professional services offered by TRD Elite Services"
+                                    description="Professional services offered by Beyond Dreams Tours"
                                 />
                                 <Services />
                             </>
                         }
                     />
+                    
                     <Route
-                        path="/gallery"
+                        path="/articles"
                         element={
                             <>
                                 <MetaTags 
-                                    title="Gallery"
-                                    description="View our gallery of professional services and results"
+                                    title="Articles"
+                                    description="Read articles from our satisfied customers"
                                 />
-                                <Galery />
+                                <Articles />
                             </>
                         }
                     />
                     <Route
-                        path="/review"
+                        path="partnership"
                         element={
                             <>
                                 <MetaTags 
-                                    title="Review"
-                                    description="Read reviews from our satisfied customers"
+                                    title="Partnership"
+                                    description="Join us and become a partner"
                                 />
-                                <Review />
+                                <Partnership />
                             </>
                         }
                     />

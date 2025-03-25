@@ -1,108 +1,129 @@
 import type React from "react"
-import LogoIcon from "../../assets/images/logo-beyond-bg.png"
-import { FaFacebookF, FaInstagram } from "react-icons/fa"
+import { Link } from "react-router-dom"
+import LogoIcon from "../../assets/images/logo-beyond.png"
 
 const Footer: React.FC = () => {
+    const currentYear = new Date().getFullYear()
+
+    const navItems = [
+        { name: "Home", path: "/" },
+        { name: "About", path: "/about" },
+        { name: "Services", path: "/services" },
+        { name: "Article", path: "/article" },
+        { name: "Office", path: "/office" },
+    ]
+
     return (
-        <footer className="w-full" style={{ background: 'linear-gradient(180deg, #262626 44.51%, #7D0202 100%)' }}>
-        {/* Map Section */}
-            <div className="container h-[300px] mx-auto mt-0 md:mt-20">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31042966.945975985!2d111.99863680475336!3d-21.602594890039306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a31fc9bd233974d%3A0x1fafa75dc6ca69f4!2s157%20Braidwood%20Dr%2C%20Australind%20WA%206233%2C%20Australia!5e1!3m2!1sid!2sid!4v1740538816451!5m2!1sid!2sid"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                />
-            </div>
+        <footer className="bg-[#312D1F] text-white py-12 px-4 md:px-0">
+            <div className="container mx-auto flex flex-col items-center">
+                {/* Logo */}
+                <div className="mb-8 flex flex-col items-center">
+                    <img
+                        src={LogoIcon || "/placeholder.svg?height=100&width=100"}
+                        alt="Beyond Dreams Tours Logo"
+                        className="md:h-36 h-26 w-auto mb-2"
+                    />
+                </div>
 
-            {/* Footer Content */}
-            <div className="text-white py-12 mt-12 container mx-auto">
-                <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                    {/* Logo & Address */}
-                    <div className="space-y-4">
-                        <div className="flex items-center">
-                            <img src={LogoIcon} alt="TRD Elite Services" className="h-20 w-auto mr-5" />
-                            <div className="space-y-2 ">
-                                <h3 className="text-xl">Office</h3>
-                                <a 
-                                    href="https://maps.app.goo.gl/ohGTQrha2gurDzyf8"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="block hover:text-gray-300"
-                                >
-                                    <p className="text-sm font-light text-white">
-                                        157 Braidwood DR
-                                    </p>
-                                    <p className="text-sm font-light text-white">
-                                        Australind WA 6233
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                {/* Navigation */}
+                <nav className="mb-10">
+                    <ul className="flex flex-wrap justify-center gap-8">
+                        {navItems.map((item) => (
+                        <li key={item.name}>
+                            <Link to={item.path} className="text-white hover:text-amber-500 transition-colors duration-300 md:text-lg">
+                            {item.name}
+                            </Link>
+                        </li>
+                        ))}
+                    </ul>
+                </nav>
 
-                    {/* Services */}
-                    <div className="space-y-2">
-                        <h3 className="text-xl">Services</h3>
-                        <ul className="text-sm font-light text-gray-300 space-y-2">
-                            <li><a className="hover:underline underline-offset-2 hover:text-white" href="/services?category=handyman">Handyman</a></li>
-                            <li><a className="hover:underline underline-offset-2 hover:text-white" href="/services?category=camera-installation">Home Camera</a></li>
-                            <li><a className="hover:underline underline-offset-2 hover:text-white" href="/services?category=window-tinting">Window Tinting</a></li>
-                            <li><a className="hover:underline underline-offset-2 hover:text-white" href="/services?category=pressure-cleaning">Pressure Cleaning</a></li>
-                            <li><a className="hover:underline underline-offset-2 hover:text-white" href="/services?category=painting">Painting</a></li>
-                        </ul>
-                    </div>
-
-                    {/* Email */}
-                    <div className="space-y-2">
-                        <h3 className="text-xl">Email US</h3>
-                        <a href="mailto:trdservices@outlook.com" className="text-sm font-light hover:text-white text-gray-300 hover:underline underline-offset-2">
-                        trdservices@outlook.com
-                        </a>
-                    </div>
-
-                    <div className="space-y-2">
-                        <h3 className="text-xl">Social Media</h3>
-                        <div className="space-y-2">
-                            <a
-                                href="https://www.instagram.com/trdeliteservices/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center hover:text-white text-gray-300"
+                {/* Social Media */}
+                <div className="flex justify-center gap-10 mb-10">
+                    <a
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-col items-center group"
+                    >
+                        <div className="text-white group-hover:text-amber-500 transition-colors duration-300 mb-1">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="mb-1"
                             >
-                                <FaInstagram className="mr-2" />
-                                <span className="text-sm font-light hover:text-white text-gray-300">@
-                                trdeliteservices</span>
-                            </a>
-                            <a
-                                href="https://www.facebook.com/profile.php?id=61559896857434"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center hover:text-white text-gray-300"
-                            >
-                                <FaFacebookF className="mr-2" />
-                                <span className="text-sm font-light hover:text-white text-gray-300">TRD Elite Services</span>
-                            </a>
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
                         </div>
-                    </div>
+                        <span className="text-sm text-gray-300 group-hover:text-amber-500 transition-colors duration-300">
+                        Facebook
+                        </span>
+                    </a>
 
-                    {/* Contact */}
-                    <div className="space-y-2">
-                        <h3 className="text-xl">Call US</h3>
-                        <a href="https://wa.me/61401947050" target="_blank" rel="noopener noreferrer" className="text-sm font-light text-white hover:text-gray-300">
-                        WhatsApp: +61 401 947 050 <br />
-                        Tel: +61 401 947 050
-                        </a>
-                    </div>
+                    <a href="mailto:info@beyonddreamstours.com" className="flex flex-col items-center group">
+                        <div className="text-white group-hover:text-amber-500 transition-colors duration-300 mb-1">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="mb-1"
+                        >
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        </div>
+                        <span className="text-sm text-gray-300 group-hover:text-amber-500 transition-colors duration-300">
+                        Email
+                        </span>
+                    </a>
+
+                    <a
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-col items-center group"
+                    >
+                        <div className="text-white group-hover:text-amber-500 transition-colors duration-300 mb-1">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="mb-1"
+                        >
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        </div>
+                        <span className="text-sm text-gray-200 group-hover:text-amber-500 transition-colors duration-300">
+                        Instagram
+                        </span>
+                    </a>
                 </div>
 
                 {/* Copyright */}
-                <div className="container mx-auto px-4 mt-8 pt-8 border-t border-red-700">
-                <p className="text-sm text-center text-white">© 2025 by TRD Elite Services. All Rights Reserved</p>
-                </div>
+                <div className="text-gray-200 text-base">© Copyright {currentYear} Beyond Dreams Tours. All Rights Reserved.</div>
+                <div className="text-gray-200 text-base">Developed by <a href="https://www.genfity.com.au" className="text-amber-500 hover:text-amber-400 transition-colors duration-300" target="_blank">Genfity Digital Solution</a></div>
+                <div className="text-gray-200 text-base"><a href="https://www.genfity.com.au" className="text-amber-500 hover:text-amber-400 transition-colors duration-300" target="_blank">www.genfity.com.au</a></div>
             </div>
         </footer>
     )
