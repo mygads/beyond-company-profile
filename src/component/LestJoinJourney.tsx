@@ -90,7 +90,7 @@ const LetsJoinJourney: React.FC = () => {
                     ref={sectionRef}
                     className="bg-[#6C6245] rounded-2xl p-4 md:p-5 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
                 >
-                    <div className="flex flex-col md:flex-row items-center">
+                    <div className="flex flex-col md:flex-row md:items-center ">
                         {/* Left Column - Image (1/4 width) */}
                         <div className="md:w-1/4 mb-8 md:mb-0">
                             <div
@@ -100,7 +100,7 @@ const LetsJoinJourney: React.FC = () => {
                                 <img
                                     src={Images}
                                     alt="Airplane flying over landscape"
-                                    className="w-full h-full object-cover"
+                                    className="w-[60%] md:w-full h-full object-cover"
                                 />
                             </div>
                         </div>
@@ -108,10 +108,10 @@ const LetsJoinJourney: React.FC = () => {
                         {/* Right Column - Content (3/4 width) */}
                         <div
                             ref={contentRef}
-                            className="md:w-3/4 text-center transition-all duration-700 pr-18 md:pr-62 md:px-12 translate-x-10"
+                            className="md:w-3/4 text-center transition-all duration-700 lg:pr-50"
                         >
-                            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white font-playfair">Lets Join The Journey!</h2>
-                            <p className="text-xl text-[#D9D9D9] mb-6">
+                            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white font-playfair">Lets Join The Journey!</h2>
+                            <p className="text-lg md:text-xl text-[#D9D9D9] mb-6">
                                 <span className="inline-block mr-2">✈</span> Looking for a customized study tour in Perth?
                                 <span className="font-semibold"> Click the button below</span> for expert planning and unforgettable
                                 learning experiences!

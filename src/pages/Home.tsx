@@ -1,5 +1,6 @@
 import { HomeBanner } from "../component/banner/HomeBanner"
 import ChooseYourTour from "../component/ChooseYourTour"
+import ContactUs from "../component/ContactUs"
 import ExperienceNewAdventure from "../component/ExperienceNewAdvanture"
 import LetsJoinJourney from "../component/LestJoinJourney"
 import QnASection from "../component/QnASection"
@@ -16,6 +17,7 @@ export const Home = () => {
             <ExperienceNewAdventure />
             <LetsJoinJourney />
             <QnASection />
+            <ContactUs />
         </>
     )
 }
