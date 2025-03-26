@@ -1,5 +1,5 @@
 import Background from '../../assets/images/banner-bg/banner-home.png'
-import Line from '../../assets/images/home-line-banner.png'
+import Line from '../../assets/desain/home-line-banner.png'
 
 export const HomeBanner = () => {
     return (
