@@ -1,5 +1,9 @@
+import { PartnershipBanner } from "../component/banner/PartnershipBanner"
+
 export const Partnership = () => {
     return (
-        <div>Partnership</div>
+        <>
+            <PartnershipBanner />
+        </>
     )
 }
