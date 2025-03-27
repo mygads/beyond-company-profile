@@ -59,7 +59,7 @@ const Reason: React.FC<ReasonProps> = ({ emoji, title, description, delay }) => 
                 <h3 className="text-xl md:text-2xl font-semibold mb-2 flex items-center">
                     <span className="mr-2">{emoji}</span> {title}
                 </h3>
-                <p className="text-lg md:text-xl">{description}</p>
+                <p className="text-md md:text-lg">{description}</p>
             </div>
         </div>
     )
