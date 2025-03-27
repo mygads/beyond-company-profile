@@ -1,7 +1,9 @@
+import { AboutBanner } from "../component/banner/AboutBanner"
+
 export const About = () => {
     return (
         <>
-            <div>About</div>
+            <AboutBanner />
         </>
     )
 }
