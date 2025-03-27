@@ -1,5 +1,5 @@
 import { PartnershipBanner } from "../component/banner/PartnershipBanner"
-import ContactUs from "../component/ContactUs"
+import ContactUsPartnership from "../component/ContactUsPartnership"
 import HostFamilies from "../component/HostFamilies"
 import WhoCanHost from "../component/WhoCanHost"
 import WhyBecomeHostFamily from "../component/WhyBecomeAHostFamilies"
@@ -11,7 +11,7 @@ export const Partnership = () => {
             <HostFamilies />
             <WhyBecomeHostFamily />
             <WhoCanHost />
-            <ContactUs />
+            <ContactUsPartnership />
         </>
     )
 }
