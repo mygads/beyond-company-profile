@@ -2,6 +2,8 @@
 
 import type React from "react"
 import { useEffect, useRef } from "react"
+import { GiTeacher } from "react-icons/gi"
+import { PiBowlFood } from "react-icons/pi"
 
 interface OfferingProps {
   title: string
@@ -98,7 +100,7 @@ const WhatWeOffer: React.FC = () => {
     }, [])
 
     return (
-        <section className="pb-14 px-4 overflow-hidden">
+        <section className="py-16 px-4 overflow-hidden">
             <div className="container mx-auto">
                 <div
                     ref={sectionRef}
@@ -115,26 +117,7 @@ const WhatWeOffer: React.FC = () => {
                         title="Educational Tours"
                         description="Organizing comprehensive educational tours for school and university groups. Our programs are designed to complement academic curricula, with hands-on learning in various subjects."
                         icon={
-                        <svg
-                            width="64"
-                            height="64"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="text-gray-800"
-                        >
-                            <rect x="8" y="2" width="8" height="14" rx="2"></rect>
-                            <path d="M4 18c0-1 2-2 2-2h12s2 1 2 2"></path>
-                            <path d="M10 4h4"></path>
-                            <circle cx="12" cy="10" r="2"></circle>
-                            <path d="M12 12v2"></path>
-                            <path d="M6 18h12"></path>
-                            <path d="M18 18v2"></path>
-                            <path d="M6 18v2"></path>
-                        </svg>
+                            <GiTeacher size={64} />
                         }
                         position="left"
                         delay={100}
@@ -167,24 +150,7 @@ const WhatWeOffer: React.FC = () => {
                     <Offering
                         title="Culinary & Cultural Immersion"
                         description="Explore the heart of a destination through its food! Our curated meal plans feature traditional dishes, cooking experiences, and cultural storytelling."
-                        icon={
-                        <svg
-                            width="64"
-                            height="64"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="text-gray-800"
-                        >
-                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
-                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
-                            <line x1="6" y1="1" x2="6" y2="4"></line>
-                            <line x1="10" y1="1" x2="10" y2="4"></line>
-                            <line x1="14" y1="1" x2="14" y2="4"></line>
-                        </svg>
+                        icon={<PiBowlFood size={64} />
                         }
                         position="left"
                         delay={300}

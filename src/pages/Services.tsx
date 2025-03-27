@@ -1,8 +1,13 @@
+import { ServicesBanner } from "../component/banner/ServicesBanner"
+import OurServices from "../component/OurServices"
+import WhatWeOffer from "../component/WhatWeOffer"
 
 export const Services = () => {
     return (
         <>
-            <div>Services</div>
+            <ServicesBanner />
+            <OurServices />
+            <WhatWeOffer />
         </>
     )
 }
