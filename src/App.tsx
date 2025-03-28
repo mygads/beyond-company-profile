@@ -24,8 +24,8 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="Beyond Dreams Tours"
-                                    description="Welcome to Beyond Dreams Tours - Your trusted partner for quality services"
+                                    title="Beyond Dreams Tours - Educational Tours Australia"
+                                    description="Explore the Australia with Beyond Dreams Tours, your trusted partner for educational tours, study tours, and leisure trips, providing unforgettable experiences for students and educators alike, with a focus on cultural immersion and academic enrichment, ensuring a well-rounded and enriching travel experience, tailored to meet the needs of students and educational institutions, while fostering global understanding and personal growth through travel, exploration, and learning."
                                 />
                                 <Home />
                             </>
@@ -36,8 +36,8 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="Beyond Dreams Tours"
-                                    description="Welcome to Beyond Dreams Tours - Your trusted partner for quality services"
+                                    title="Beyond Dreams Tours - Educational Tours Australia"
+                                    description="Explore the Australia with Beyond Dreams Tours, your trusted partner for educational tours, study tours, and leisure trips, providing unforgettable experiences for students and educators alike, with a focus on cultural immersion and academic enrichment, ensuring a well-rounded and enriching travel experience, tailored to meet the needs of students and educational institutions, while fostering global understanding and personal growth through travel, exploration, and learning."
                                 />
                                 <Home />
                             </>
@@ -48,8 +48,8 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="Beyond Dreams Tours"
-                                    description="Welcome to Beyond Dreams Tours - Your trusted partner for quality services"
+                                    title="Beyond Dreams Tours - Educational Tours Australia"
+                                    description="Explore the Australia with Beyond Dreams Tours, your trusted partner for educational tours, study tours, and leisure trips, providing unforgettable experiences for students and educators alike, with a focus on cultural immersion and academic enrichment, ensuring a well-rounded and enriching travel experience, tailored to meet the needs of students and educational institutions, while fostering global understanding and personal growth through travel, exploration, and learning."
                                 />
                                 <Home />
                             </>
@@ -60,8 +60,8 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="About Us"
-                                    description="Learn more about Beyond Dreams Tours"
+                                    title="About Us - Beyond Dreams Tours - Educational Tours Australia"
+                                    description="Learn more about Beyond Dreams Tours, your trusted partner for educational tours in Australia. We provide unforgettable experiences for students and educators alike, with a focus on cultural immersion and academic enrichment."
                                 />
                                 <About />
                             </>
@@ -72,8 +72,8 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="Services"
-                                    description="Professional services offered by Beyond Dreams Tours"
+                                    title="Services - Beyond Dreams Tours - Educational Tours Australia"
+                                    description="Explore the services offered by Beyond Dreams Tours, your trusted partner for educational tours in Australia. We provide unforgettable experiences for students and educators alike, with a focus on cultural immersion and academic enrichment."
                                 />
                                 <Services />
                             </>
@@ -85,8 +85,8 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="Articles"
-                                    description="Read articles from our satisfied customers"
+                                    title="Articles - Beyond Dreams Tours - Educational Tours Australia"
+                                    description="Read articles from our satisfied customers and learn more about educational tours in Australia. We provide unforgettable experiences for students and educators alike, with a focus on cultural immersion and academic enrichment."
                                 />
                                 <Articles />
                             </>
@@ -98,7 +98,7 @@ export const App = () => {
                             <>
                                 <MetaTags 
                                     title="How Study Tours Enhance Learning"
-                                    description="Discover how study tours enhance learning beyond the classroom"
+                                    description="Discover how study tours enhance learning experiences for students, fostering cultural immersion and academic enrichment, and providing unforgettable experiences that promote personal growth and global understanding, while also offering educators a unique opportunity to engage with students in a dynamic and interactive environment, ensuring a well-rounded and enriching travel experience that meets the needs of students and educational institutions."
                                 />
                                 <HowStudyToursEnhanceLearning />
                             </>
@@ -109,8 +109,8 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="Ultimate Packing Guide"
-                                    description="Your ultimate packing guide for study tours"
+                                    title="Ultimate Packing Guide for Students on Study Tours"
+                                    description="Discover the ultimate packing guide for students on study tours, ensuring a well-rounded and enriching travel experience that meets the needs of students and educational institutions, while fostering global understanding and personal growth through travel, exploration, and learning."
                                 />
                                 <UltimatePackingGuide />
                             </>
@@ -122,7 +122,7 @@ export const App = () => {
                             <>
                                 <MetaTags 
                                     title="Why Perth is the Best Destination for Educational Tours"
-                                    description="Discover why Perth is the best destination for educational tours"
+                                    description="Discover why Perth is the best destination for educational tours, offering a unique blend of cultural immersion, academic enrichment, and unforgettable experiences that promote personal growth and global understanding, while also providing educators with a dynamic and interactive environment to engage with students, ensuring a well-rounded and enriching travel experience that meets the needs of students and educational institutions."
                                 />
                                 <WhyPerthBestDestination />
                             </>
@@ -133,8 +133,8 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="Top 5 Must-Visit Universities in Perth for Study Tours"
-                                    description="Explore the top 5 universities in Perth for study tours"
+                                    title="Top 5 Universities in Perth for Study Tours"
+                                    description="Discover the top 5 universities in Perth for study tours, offering a unique blend of cultural immersion, academic enrichment, and unforgettable experiences that promote personal growth and global understanding, while also providing educators with a dynamic and interactive environment to engage with students, ensuring a well-rounded and enriching travel experience that meets the needs of students and educational institutions."
                                 />
                                 <TopUniversitiesInPerth />
                             </>
@@ -145,8 +145,8 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="Maximising Learning During a Study Tour"
-                                    description="Learn how to maximise your learning during a study tour"
+                                    title="Maximising Learning During Study Tour"
+                                    description="Learn how to maximise learning during study tours, ensuring a well-rounded and enriching travel experience that meets the needs of students and educational institutions, while fostering global understanding and personal growth through travel, exploration, and learning."
                                 />
                                 <MaximisingLearningDuringStudyTour />
                             </>
@@ -158,7 +158,7 @@ export const App = () => {
                             <>
                                 <MetaTags 
                                     title="Manage Travel Budgets for Student Tours"
-                                    description="Learn how to manage travel budgets for student tours"
+                                    description="Learn how to manage travel budgets for student tours, ensuring a well-rounded and enriching travel experience that meets the needs of students and educational institutions, while fostering global understanding and personal growth through travel, exploration, and learning."
                                 />
                                 <ManageTravelBudgets />
                             </>
@@ -170,7 +170,7 @@ export const App = () => {
                             <>
                                 <MetaTags 
                                     title="Best Cultural Spots in Perth for International Students"
-                                    description="Discover the best cultural spots in Perth for international students"
+                                    description="Discover the best cultural spots in Perth for international students, offering a unique blend of cultural immersion, academic enrichment, and unforgettable experiences that promote personal growth and global understanding, while also providing educators with a dynamic and interactive environment to engage with students, ensuring a well-rounded and enriching travel experience that meets the needs of students and educational institutions."
                                 />
                                 <BestCulturalSpotsPerth />
                             </>
@@ -181,8 +181,8 @@ export const App = () => {
                         element={
                             <>
                                 <MetaTags 
-                                    title="Partnership"
-                                    description="Join us and become a partner"
+                                    title="Partnership - Beyond Dreams Tours - Educational Tours Australia"
+                                    description="Join us and become a partner with Beyond Dreams Tours, your trusted partner for educational tours in Australia. We provide unforgettable experiences for students and educators alike, with a focus on cultural immersion and academic enrichment."
                                 />
                                 <Partnership />
                             </>
