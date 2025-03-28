@@ -140,9 +140,9 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Copyright */}
-                <div className="text-gray-200 text-base">© Copyright {currentYear} Beyond Dreams Tours. All Rights Reserved.</div>
-                <div className="text-gray-200 text-base">Developed by <a href="https://www.genfity.com.au" className="text-amber-500 hover:text-amber-400 transition-colors duration-300" target="_blank">Genfity Digital Solution</a></div>
-                <div className="text-gray-200 text-base"><a href="https://www.genfity.com.au" className="text-amber-500 hover:text-amber-400 transition-colors duration-300" target="_blank">www.genfity.com.au</a></div>
+                <div className="text-gray-200 text-sm md:text-base text-center">© Copyright {currentYear} Beyond Dreams Tours. All Rights Reserved.</div>
+                <div className="text-gray-200 text-sm md:text-base">Developed by <a href="https://www.genfity.com.au" className="text-amber-500 hover:text-amber-400 transition-colors duration-300" target="_blank">Genfity Digital Solution</a></div>
+                <div className="text-gray-200 text-sm md:text-base"><a href="https://www.genfity.com.au" className="text-amber-500 hover:text-amber-400 transition-colors duration-300" target="_blank">www.genfity.com.au</a></div>
             </div>
         </footer>
     )
