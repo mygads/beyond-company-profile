@@ -6,6 +6,13 @@ import { Services } from './pages/Services';
 import MetaTags from './component/MetaTags';
 import { Articles } from './pages/Articles';
 import { Partnership } from './pages/Partnership';
+import HowStudyToursEnhanceLearning from './component/articles/post/HowStudyToursEnhanceLearning';
+import UltimatePackingGuide from './component/articles/post/UltimatePackingGuide';
+import WhyPerthBestDestination from './component/articles/post/WhyPerthBestDestination';
+import TopUniversitiesInPerth from './component/articles/post/TopUniversitiesPerthStudyTour';
+import MaximisingLearningDuringStudyTour from './component/articles/post/MaximisingLearningDuringStudy';
+import ManageTravelBudgets from './component/articles/post/ManageTravelBudgetStudent';
+import BestCulturalSpotsPerth from './component/articles/post/CulturalSpotsPerth';
 
 export const App = () => {
     return (
@@ -82,6 +89,90 @@ export const App = () => {
                                     description="Read articles from our satisfied customers"
                                 />
                                 <Articles />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/articles/how-study-tours-enhance-learning"
+                        element={
+                            <>
+                                <MetaTags 
+                                    title="How Study Tours Enhance Learning"
+                                    description="Discover how study tours enhance learning beyond the classroom"
+                                />
+                                <HowStudyToursEnhanceLearning />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/articles/ultimate-packing-guide-students"
+                        element={
+                            <>
+                                <MetaTags 
+                                    title="Ultimate Packing Guide"
+                                    description="Your ultimate packing guide for study tours"
+                                />
+                                <UltimatePackingGuide />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/articles/why-perth-best-destination"
+                        element={
+                            <>
+                                <MetaTags 
+                                    title="Why Perth is the Best Destination for Educational Tours"
+                                    description="Discover why Perth is the best destination for educational tours"
+                                />
+                                <WhyPerthBestDestination />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/articles/top-universities-perth-study-tours"
+                        element={
+                            <>
+                                <MetaTags 
+                                    title="Top 5 Must-Visit Universities in Perth for Study Tours"
+                                    description="Explore the top 5 universities in Perth for study tours"
+                                />
+                                <TopUniversitiesInPerth />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/articles/maximising-learning-study-tour"
+                        element={
+                            <>
+                                <MetaTags 
+                                    title="Maximising Learning During a Study Tour"
+                                    description="Learn how to maximise your learning during a study tour"
+                                />
+                                <MaximisingLearningDuringStudyTour />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/articles/manage-travel-budgets-student-tours"
+                        element={
+                            <>
+                                <MetaTags 
+                                    title="Manage Travel Budgets for Student Tours"
+                                    description="Learn how to manage travel budgets for student tours"
+                                />
+                                <ManageTravelBudgets />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/articles/cultural-spots-perth-international-students"
+                        element={
+                            <>
+                                <MetaTags 
+                                    title="Best Cultural Spots in Perth for International Students"
+                                    description="Discover the best cultural spots in Perth for international students"
+                                />
+                                <BestCulturalSpotsPerth />
                             </>
                         }
                     />

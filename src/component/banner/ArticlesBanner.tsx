@@ -2,13 +2,13 @@ import Background from '../../assets/images/banner-bg/banner-articles.png'
 
 export const ArticlesBanner = () => {
     return (
-        <section className="relative h-[400px] md:h-[410px] overflow-hidden">
+        <section className="relative h-[200px] md:h-[410px] overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="w-full absolute inset-0">
                 
                 {/* Desktop background without gradient */}
                 <div
-                    className="hidden md:block w-full h-full bg-cover bg-center"
+                    className="w-full h-full bg-cover bg-center"
                     style={{
                         backgroundImage: `url(${Background})`,
                     }}
