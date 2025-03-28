@@ -66,7 +66,7 @@ const ContactUs: React.FC = () => {
         body += `Heard about us from: ${formData.hearAboutUs.join(", ") || "Not specified"}\n`
 
         // Create mailto link
-        const mailtoLink = `mailto:beyond@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+        const mailtoLink = `mailto:info@beyonddreamstours.com.au?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 
         // Open email client
         window.location.href = mailtoLink

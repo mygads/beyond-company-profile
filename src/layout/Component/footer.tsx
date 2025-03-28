@@ -9,8 +9,13 @@ const Footer: React.FC = () => {
         { name: "Home", path: "/" },
         { name: "About", path: "/about" },
         { name: "Services", path: "/services" },
-        { name: "Article", path: "/article" },
-        { name: "Office", path: "/office" },
+        { name: "Article", path: "/articles" },
+        { 
+            name: "Office", 
+            path: "https://maps.app.goo.gl/xyXj4dmEXu4mv941A",
+            target: "_blank",
+            rel: "noopener noreferrer" 
+        },
     ]
 
     return (
@@ -29,11 +34,25 @@ const Footer: React.FC = () => {
                 <nav className="mb-10">
                     <ul className="flex flex-wrap justify-center gap-8">
                         {navItems.map((item) => (
-                        <li key={item.name}>
-                            <Link to={item.path} className="text-white hover:text-amber-500 transition-colors duration-300 md:text-lg">
-                            {item.name}
-                            </Link>
-                        </li>
+                            <li key={item.name}>
+                                {item.target ? (
+                                    <a 
+                                        href={item.path} 
+                                        target={item.target}
+                                        rel={item.rel}
+                                        className="text-white hover:text-amber-500 transition-colors duration-300 md:text-lg"
+                                    >
+                                        {item.name}
+                                    </a>
+                                ) : (
+                                    <Link 
+                                        to={item.path} 
+                                        className="text-white hover:text-amber-500 transition-colors duration-300 md:text-lg"
+                                    >
+                                        {item.name}
+                                    </Link>
+                                )}
+                            </li>
                         ))}
                     </ul>
                 </nav>
@@ -67,7 +86,7 @@ const Footer: React.FC = () => {
                         </span>
                     </a>
 
-                    <a href="mailto:info@beyonddreamstours.com" className="flex flex-col items-center group">
+                    <a href="mailto:info@beyonddreamstours.com.au" className="flex flex-col items-center group">
                         <div className="text-white group-hover:text-amber-500 transition-colors duration-300 mb-1">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +110,7 @@ const Footer: React.FC = () => {
                     </a>
 
                     <a
-                        href="https://instagram.com"
+                        href="http://instagram.com/beyonddreamstour"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex flex-col items-center group"

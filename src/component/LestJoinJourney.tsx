@@ -118,7 +118,7 @@ const LetsJoinJourney: React.FC = () => {
                             </p>
 
                             <Link
-                                to="/tours"
+                                to="/services"
                                 className="inline-flex items-center px-4 py-2 bg-[#ECE5CD] text-[#3E3A2B] rounded-2xl font-medium transition-all duration-300 hover:bg-white hover:shadow-lg"
                             >
                                 <svg

@@ -3,23 +3,15 @@ import Footer from './Component/footer';
 import Navbar from './Component/navbar';
 
 const Layout: React.FC = () => {
-
-
     return (
-        <div className="flex h-screen overflow-hidden">
+        <div className="flex flex-col min-h-screen"> {/* Changed from h-screen overflow-hidden */}
+            <Navbar />
+            
+            <main className="flex-1 bg-white">
+                <Outlet />
+            </main>
 
-            {/* Content Area */}
-            <div className="relative flex-1 flex flex-col overflow-y-auto overflow-x-hidden">
-                <Navbar />
-
-                <main className="flex-1 bg-white ">
-                    {/* Render halaman sesuai route */}
-                    <Outlet />
-                </main>
-
-                {/* Footer */}
-                <Footer />
-            </div>
+            <Footer />
         </div>
     );
 };

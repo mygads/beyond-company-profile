@@ -13,10 +13,12 @@ import TopUniversitiesInPerth from './component/articles/post/TopUniversitiesPer
 import MaximisingLearningDuringStudyTour from './component/articles/post/MaximisingLearningDuringStudy';
 import ManageTravelBudgets from './component/articles/post/ManageTravelBudgetStudent';
 import BestCulturalSpotsPerth from './component/articles/post/CulturalSpotsPerth';
+import ScrollToTop from './layout/scroll-top';
 
 export const App = () => {
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <Routes>
                 <Route element={<Layout/>}>  
                     <Route
