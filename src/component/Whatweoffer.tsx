@@ -6,11 +6,11 @@ import { GiTeacher } from "react-icons/gi"
 import { PiBowlFood } from "react-icons/pi"
 
 interface OfferingProps {
-  title: string
-  description: string
-  icon: React.ReactNode
-  position: "left" | "right"
-  delay: number
+    title: string
+    description: string
+    icon: React.ReactNode
+    position: "left" | "right"
+    delay: number
 }
 
 const Offering: React.FC<OfferingProps> = ({ title, description, icon, position, delay }) => {
@@ -69,7 +69,7 @@ const Offering: React.FC<OfferingProps> = ({ title, description, icon, position,
     )
 }
 
-const WhatWeOffer: React.FC = () => {
+const WhatWeOfferSection: React.FC = () => {
     const sectionRef = useRef<HTMLDivElement>(null);
     
     useEffect(() => {
@@ -184,5 +184,5 @@ const WhatWeOffer: React.FC = () => {
     )
 }
 
-export default WhatWeOffer
+export default WhatWeOfferSection
 
