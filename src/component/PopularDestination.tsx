@@ -180,7 +180,7 @@ const PopularDestinations: React.FC = () => {
     // Handle WhatsApp booking
     const handleBookNow = (destination: Destination) => {
         const message = `Hello, I'm interested in booking the "${destination.title}" tour. Please provide more information about availability and pricing. Thank you!`
-        const whatsappUrl = `https://wa.me/61401947050?text=${encodeURIComponent(message)}`
+        const whatsappUrl = `https://wa.me/61491105261?text=${encodeURIComponent(message)}`
         window.open(whatsappUrl, "_blank")
     }
 

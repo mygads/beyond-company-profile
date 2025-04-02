@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
                         PARTNERSHIP
                     </Link>
                     <a
-                        href="https://wa.me/61401947050" 
+                        href="https://wa.me/61491105261" 
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center px-6 py-2 bg-[#D9D9D9] rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:border-[#D9D9D9] hover:border-2 active:shadow-inner font-medium gap-2 hover:text-[#D9D9D9]"
@@ -148,7 +148,7 @@ const Navbar: React.FC = () => {
                                 PARTNERSHIP
                             </Link>
                             <a
-                                href="https://wa.me/61401947050" // Replace with your actual contact number
+                                href="https://wa.me/61491105261" // Replace with your actual contact number
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => setMobileMenuOpen(false)}
