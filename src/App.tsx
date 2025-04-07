@@ -14,12 +14,25 @@ import MaximisingLearningDuringStudyTour from './component/articles/post/Maximis
 import ManageTravelBudgets from './component/articles/post/ManageTravelBudgetStudent';
 import BestCulturalSpotsPerth from './component/articles/post/CulturalSpotsPerth';
 import ScrollToTop from './layout/scroll-top';
+import logo from './assets/images/logo-beyond.png';
 
 export const App = () => {
     return (
         <BrowserRouter>
             <ScrollToTop />
             <Routes>
+                <Route
+                    path="/images/logo-beyond.png"
+                    element={
+                        <>
+                            <MetaTags 
+                                title="Logo Beyond Dreams Tours"
+                                description="Explore the Australia with Beyond Dreams Tours, your trusted partner for educational tours, study tours, and leisure trips, providing unforgettable experiences for students and educators alike, with a focus on cultural immersion and academic enrichment, ensuring a well-rounded and enriching travel experience, tailored to meet the needs of students and educational institutions, while fostering global understanding and personal growth through travel, exploration, and learning."
+                            />
+                            <img src={logo} alt="logo-beyond-dreams-tours" />
+                        </>
+                    }
+                />
                 <Route element={<Layout/>}>  
                     <Route
                         path=""
@@ -33,6 +46,7 @@ export const App = () => {
                             </>
                         }
                     />
+                    
                     <Route
                         path="/"
                         element={

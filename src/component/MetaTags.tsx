@@ -8,12 +8,12 @@ interface MetaTagsProps {
 }
 
 const MetaTags = ({ title, description, canonical, image }: MetaTagsProps) => {
-  const site = "TRD Elite Services";
+  const site = "Beyond Dreams Tours";
   const fullTitle = title === site ? title : `${title} | ${site}`;
-  const defaultDescription = "Professional services offered by TRD Elite Services";
+  const defaultDescription = "Explore the Australia with Beyond Dreams Tours, your trusted partner for educational tours, study tours, and leisure trips, providing unforgettable experiences for students and educators alike, with a focus on cultural immersion and academic enrichment, ensuring a well-rounded and enriching travel experience, tailored to meet the needs of students and educational institutions, while fostering global understanding and personal growth through travel, exploration, and learning.";
   const metaDescription = description || defaultDescription;
   const url = canonical || window.location.href;
-  const imageUrl = image || "https://trdeliteservices.com.au/images/logo.png"; // Replace with your default image
+  const imageUrl = image || "https://beyonddreamstours.com.au/images/logo-beyond.png"; // Replace with your default image
 
   useEffect(() => {
     // Update title
