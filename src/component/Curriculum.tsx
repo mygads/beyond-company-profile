@@ -134,10 +134,10 @@ const CurriculumSection: React.FC = () => {
                     ref={textRef}
                     className="text-white md:w-1/2 flex flex-col justify-center transition-all duration-700 ease-out transform opacity-0 md:pr-16 container px-4 text-center md:text-left py-6 md:py-0"
                 >
-                    <h2 className="text-lg md:text-3xl mb-2">
+                    <h2 className="text-md md:text-xl mb-2">
                     Enhance Your Curriculum with a Unique Cultural Experience
                     </h2>
-                    <p className="text-lg md:text-3xl font-semibold">
+                    <p className="text-md md:text-xl font-semibold">
                     Partner with us to provide your students with an unforgettable Australian cultural immersion.
                     </p>
                 </div>

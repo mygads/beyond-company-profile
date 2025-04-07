@@ -10,14 +10,14 @@ const HowStudyToursEnhanceLearning: React.FC = () => {
     return (
         <>
             <ArticlesBanner />
-            <main className="py-16 px-4">
+            <main className="py-12 px-4">
                 <div className="container mx-auto max-w-4xl">
-                    <div className="my-12">
+                    <div className="my-4">
                         <Link to="/articles" className="text-amber-600 hover:underline">
                             ← Back to Articles
                         </Link>
                     </div>
-                    <h1 className="text-3xl md:text-4xl font-bold text-center mb-2">
+                    <h1 className="text-2xl md:text-3xl font-bold text-center mb-2">
                         How Study Tours Enhance Learning Beyond the Classroom
                     </h1>
                     <p className="text-center text-gray-600 mb-6">by Charlotte Delos</p>
@@ -31,14 +31,14 @@ const HowStudyToursEnhanceLearning: React.FC = () => {
                     </div>
 
                     <div className="prose prose-lg max-w-none">
-                        <p className="text-lg">
+                        <p className="">
                             Learning isn't confined to four walls—study tours provide students with immersive experiences that deepen
                             their understanding of subjects while fostering independence and cultural awareness. But how exactly do they
                             enhance education?
                         </p>
 
                         <div className="mt-8">
-                            <h2 className="text-2xl font-bold mb-3">1. Real-World Application of Knowledge</h2>
+                            <h2 className="text-lg font-bold mb-3">1. Real-World Application of Knowledge</h2>
                             <p>
                             Study tours bridge the gap between theory and practice. Whether it's visiting a historical site, a
                             research facility, or a company, students can see their lessons come to life.
@@ -46,7 +46,7 @@ const HowStudyToursEnhanceLearning: React.FC = () => {
                         </div>
 
                         <div className="mt-8">
-                            <h2 className="text-2xl font-bold mb-3">2. Cultural Exposure &  Global Awareness</h2>
+                            <h2 className="text-lg font-bold mb-3">2. Cultural Exposure &  Global Awareness</h2>
                             <p>
                                 Traveling to new places introduces students to different cultures, traditions, and perspectives, shaping
                                 them into well-rounded individuals.
@@ -54,7 +54,7 @@ const HowStudyToursEnhanceLearning: React.FC = () => {
                         </div>
 
                         <div className="mt-8">
-                            <h2 className="text-2xl font-bold mb-3">3. Developing Critical  Thinking & Soft Skills</h2>
+                            <h2 className="text-lg font-bold mb-3">3. Developing Critical  Thinking & Soft Skills</h2>
                             <p>
                                 By navigating new environments, managing schedules, and engaging with experts, students improve their
                                 problem-solving, communication, and teamwork skills.
@@ -62,7 +62,7 @@ const HowStudyToursEnhanceLearning: React.FC = () => {
                         </div>
 
                         <div className="mt-12 border-t pt-6">
-                            <p className="text-lg">
+                            <p className="">
                                 Study tours go beyond textbooks, turning learning into a dynamic and unforgettable experience. Schools and
                                 universities should consider making them an essential part of their curriculum.
                             </p>

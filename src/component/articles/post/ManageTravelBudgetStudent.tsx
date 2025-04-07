@@ -76,7 +76,7 @@ const ManageTravelBudgets: React.FC = () => {
             </div>
 
             <div ref={headerRef} className="mb-8 transition-all duration-700 ease-out transform opacity-0 translate-y-10">
-                <h1 className="text-3xl md:text-4xl font-bold text-center mb-2">
+                <h1 className="text-2xl md:text-3xl font-bold text-center mb-2">
                 <span className="mr-2">💰</span> How to Manage Travel Budgets for Student Tours
                 </h1>
                 <p className="text-center text-gray-600 mb-6">by Himal Turn</p>
@@ -94,13 +94,13 @@ const ManageTravelBudgets: React.FC = () => {
                 ref={contentRef}
                 className="prose prose-lg max-w-none transition-all duration-700 ease-out transform opacity-0 translate-y-10"
             >
-                <p className="text-lg">
+                <p className="text-base">
                 Traveling as a student doesn't mean breaking the bank. With smart planning, you can enjoy a rich and
                 fulfilling study tour experience without overspending. Here's how:
                 </p>
 
                 <div className="mt-8">
-                <h2 className="text-2xl font-bold mb-3">
+                <h2 className="text-lg font-bold mb-3">
                     <span className="mr-2">💵</span> Set a Budget in Advance
                 </h2>
                 <p>
@@ -110,7 +110,7 @@ const ManageTravelBudgets: React.FC = () => {
                 </div>
 
                 <div className="mt-8">
-                <h2 className="text-2xl font-bold mb-3">
+                <h2 className="text-lg font-bold mb-3">
                     <span className="mr-2">🚌</span> Use Public Transport
                 </h2>
                 <p>
@@ -120,7 +120,7 @@ const ManageTravelBudgets: React.FC = () => {
                 </div>
 
                 <div className="mt-8">
-                <h2 className="text-2xl font-bold mb-3">
+                <h2 className="text-lg font-bold mb-3">
                     <span className="mr-2">🍽️</span> Eat Smart & Save More
                 </h2>
                 <p>
@@ -130,7 +130,7 @@ const ManageTravelBudgets: React.FC = () => {
                 </div>
 
                 <div className="mt-8">
-                <h2 className="text-2xl font-bold mb-3">
+                <h2 className="text-lg font-bold mb-3">
                     <span className="mr-2">🎫</span> Look for Student Discounts
                 </h2>
                 <p>
@@ -140,7 +140,7 @@ const ManageTravelBudgets: React.FC = () => {
                 </div>
 
                 <div className="mt-12 border-t pt-6">
-                <p className="text-lg">
+                <p className="text-base">
                     With these budget-conscious strategies, you can make the most of your educational tour without financial
                     stress. Remember, smart spending allows you to focus on what truly matters—the learning experience!
                 </p>

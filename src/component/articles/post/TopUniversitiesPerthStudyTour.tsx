@@ -65,7 +65,7 @@ const TopUniversitiesInPerth: React.FC = () => {
   return (
     <>
       <ArticlesBanner />
-      <main className="py-16 px-4">
+      <main className="py-12 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="my-12">
             <Link to="/articles" className="text-amber-600 hover:underline">
@@ -77,7 +77,7 @@ const TopUniversitiesInPerth: React.FC = () => {
             ref={headerRef}
             className="mb-8 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
           >
-            <h1 className="text-3xl md:text-4xl font-bold text-center mb-2">
+            <h1 className="text-2xl md:text-3xl font-bold text-center mb-2">
               <span className="mr-2">🎓</span> Top 5 Must-Visit Universities in Perth for Study Tours
             </h1>
             <p className="text-center text-gray-600 mb-6">by Sam Phippsen</p>
@@ -95,12 +95,12 @@ const TopUniversitiesInPerth: React.FC = () => {
             ref={contentRef}
             className="prose prose-lg max-w-none transition-all duration-700 ease-out transform opacity-0 translate-y-10"
           >
-            <p className="text-lg">
+            <p className="text-base">
               Perth, Australia, is not just about stunning beaches—it's also an educational hub with top universities, research institutions, and historical landmarks. Let's explore why Perth is the perfect study tour destination!
             </p>
             
             <div className="mt-8">
-              <h2 className="text-2xl font-bold mb-3">1. Home to World-Class Universities</h2>
+              <h2 className="text-lg font-bold mb-3">1. Home to World-Class Universities</h2>
               <ul className="mt-2 space-y-2">
                 <li className="flex items-start">
                   <span className="mr-2">🏛️</span>
@@ -114,7 +114,7 @@ const TopUniversitiesInPerth: React.FC = () => {
             </div>
             
             <div className="mt-8">
-              <h2 className="text-2xl font-bold mb-3">2. Rich Historical & Cultural Attractions</h2>
+              <h2 className="text-lg font-bold mb-3">2. Rich Historical & Cultural Attractions</h2>
               <ul className="mt-2 space-y-2">
                 <li className="flex items-start">
                   <span className="mr-2">🏰</span>
@@ -128,7 +128,7 @@ const TopUniversitiesInPerth: React.FC = () => {
             </div>
             
             <div className="mt-8">
-              <h2 className="text-2xl font-bold mb-3">3. Hands-On Learning Experiences</h2>
+              <h2 className="text-lg font-bold mb-3">3. Hands-On Learning Experiences</h2>
               <ul className="mt-2 space-y-2">
                 <li className="flex items-start">
                   <span className="mr-2">🔬</span>
@@ -142,7 +142,7 @@ const TopUniversitiesInPerth: React.FC = () => {
             </div>
             
             <div className="mt-12 border-t pt-6">
-              <p className="text-lg">
+              <p className="text-base">
                 From academic exposure to cultural enrichment, Perth offers an all-in-one educational travel experience.
               </p>
             </div>

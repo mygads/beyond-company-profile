@@ -10,14 +10,14 @@ const WhyPerthBestDestination: React.FC = () => {
     return (
         <>
             <ArticlesBanner />
-            <main className="py-16 px-4">
+            <main className="py-12 px-4">
                 <div className="container mx-auto max-w-4xl">
                 <div className="my-12">
                     <Link to="/articles" className="text-amber-600 hover:underline">
                         ← Back to Articles
                     </Link>
                     </div>
-                    <h1 className="text-3xl md:text-4xl font-bold text-center mb-2">
+                    <h1 className="text-2xl md:text-3xl font-bold text-center mb-2">
                     Why Perth is the Best Destination for Educational Tours
                     </h1>
                     <p className="text-center text-gray-600 mb-6">by Aaron Patterson</p>
@@ -31,14 +31,14 @@ const WhyPerthBestDestination: React.FC = () => {
                     </div>
 
                     <div className="prose prose-lg max-w-none">
-                    <p className="text-lg">
+                    <p className="text-md">
                         Perth, Australia, is not just about stunning beaches—it's also an educational hub with top universities,
                         research institutions, and historical landmarks. Let's explore why Perth is the perfect study tour
                         destination!
                     </p>
 
                     <div className="mt-8">
-                        <h2 className="text-2xl font-bold mb-3">1. Home to World-Class Universities</h2>
+                        <h2 className="text-lg font-bold mb-3">1. Home to World-Class Universities</h2>
                         <ul className="mt-2 space-y-2">
                         <li className="flex items-start">
                             <span className="mr-2">🏛️</span>
@@ -52,7 +52,7 @@ const WhyPerthBestDestination: React.FC = () => {
                     </div>
 
                     <div className="mt-8">
-                        <h2 className="text-2xl font-bold mb-3">2. Rich Historical & Cultural Attractions</h2>
+                        <h2 className="text-lg font-bold mb-3">2. Rich Historical & Cultural Attractions</h2>
                         <ul className="mt-2 space-y-2">
                         <li className="flex items-start">
                             <span className="mr-2">🏰</span>
@@ -66,7 +66,7 @@ const WhyPerthBestDestination: React.FC = () => {
                     </div>
 
                     <div className="mt-8">
-                        <h2 className="text-2xl font-bold mb-3">3. Hands-On Learning Experiences</h2>
+                        <h2 className="text-lg font-bold mb-3">3. Hands-On Learning Experiences</h2>
                         <ul className="mt-2 space-y-2">
                         <li className="flex items-start">
                             <span className="mr-2">🔬</span>
@@ -80,7 +80,7 @@ const WhyPerthBestDestination: React.FC = () => {
                     </div>
 
                     <div className="mt-12 border-t pt-6">
-                        <p className="text-lg">
+                        <p className="text-md">
                         From academic exposure to cultural enrichment, Perth offers an all-in-one educational travel experience.
                         </p>
                     </div>

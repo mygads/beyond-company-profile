@@ -84,7 +84,7 @@ const LetsJoinJourney: React.FC = () => {
     }, [])
 
     return (
-        <section className="py-16 px-4 overflow-hidden">
+        <section className="py-12 px-4 overflow-hidden">
             <div className="container mx-auto">
                 <div
                     ref={sectionRef}
@@ -110,8 +110,8 @@ const LetsJoinJourney: React.FC = () => {
                             ref={contentRef}
                             className="md:w-3/4 text-center transition-all duration-700 lg:pr-50"
                         >
-                            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white font-playfair">Lets Join The Journey!</h2>
-                            <p className="text-lg md:text-xl text-[#D9D9D9] mb-6">
+                            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white font-playfair">Lets Join The Journey!</h2>
+                            <p className=" text-[#D9D9D9] mb-6">
                                 <span className="inline-block mr-2">✈</span> Looking for a customized study tour in Perth?
                                 <span className="font-semibold"> Click the button below</span> for expert planning and unforgettable
                                 learning experiences!

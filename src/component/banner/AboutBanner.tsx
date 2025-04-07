@@ -3,7 +3,7 @@ import Line from '../../assets/desain/home-line-banner.png'
 
 export const AboutBanner = () => {
     return (
-        <section className="relative h-[400px] md:h-[700px] overflow-hidden">
+        <section className="relative h-[350px] md:h-[500px] overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="w-full absolute inset-0">
                 
@@ -27,7 +27,7 @@ export const AboutBanner = () => {
                 </div>
             </div>
             <div>
-                <img src={Line} alt="line" className="absolute bottom-0 md:bottom-50 left-0 " />
+                <img src={Line} alt="line" className="absolute bottom-0 md:bottom-10 left-0 " />
             </div>
         </section>
     )

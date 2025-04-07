@@ -62,16 +62,16 @@ const AboutUs: React.FC = () => {
             <div className="container mx-auto">
                 <div
                     ref={sectionRef}
-                    className="text-center mb-6 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
+                    className="text-center mb-8 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-12 font-playfair">About Us</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold font-playfair">About Us</h2>
                 </div>
 
                 <div
                     ref={textRef}
                     className="text-center transition-all duration-700 ease-out transform opacity-0 translate-y-6"
                 >
-                    <p className="text-lg md:text-2xl leading-relaxed">
+                    <p className=" leading-relaxed">
                         Beyond Dreams Tours is a premier educational and cultural travel provider, specialising in immersive
                         experiences for students under 18, university students, and general travelers. We go beyond traditional
                         tourism by offering engaging educational programs, cultural homestays, and authentic local cuisine, creating

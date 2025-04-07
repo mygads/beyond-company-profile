@@ -57,7 +57,7 @@ const TourCard: React.FC<TourCardProps> = ({ title, description, imageSrc, delay
                     onClick={handleCardClick}
                     className={`
                             relative overflow-hidden rounded-lg transition-all duration-700 ease-out 
-                            transform opacity-0 translate-y-10 group h-[300px] md:h-[350px] cursor-pointer
+                            transform opacity-0 translate-y-10 group h-[180px] md:h-[250px] cursor-pointer
                     `}
                 >
                 {/* Background Image */}
@@ -83,15 +83,15 @@ const TourCard: React.FC<TourCardProps> = ({ title, description, imageSrc, delay
                                         ? 'justify-center items-center' 
                                         : 'justify-end items-start group-hover:justify-center group-hover:items-center'}`}>
                                 {/* Title */}
-                                <h3 className={`text-white text-3xl font-normal transition-all duration-500 origin-bottom-left translate-x-0 drop-shadow-lg
+                                <h3 className={`text-white text-xl font-normal transition-all duration-500 origin-bottom-left drop-shadow-lg
                                         ${isActive 
-                                                ? 'text-4xl text-center font-semibold' 
-                                                : 'group-hover:text-4xl group-hover:text-center group-hover:translate-x-0 group-hover:font-semibold'}`}>
+                                                ? 'text-xl text-center font-semibold' 
+                                                : 'group-hover:text-xl group-hover:text-center group-hover:translate-x-0 group-hover:font-semibold'}`}>
                                         {title}
                                 </h3>
 
                                 {/* Description - Hidden by default, visible on hover/active */}
-                                <p className={`text-white mt-6 overflow-hidden text-center text-xl w-full drop-shadow-md
+                                <p className={`text-white mt-6 overflow-hidden text-center w-full drop-shadow-md
                                         ${isActive 
                                                 ? 'opacity-100 max-h-[200px]' 
                                                 : 'opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[200px]'}`}>
@@ -134,13 +134,13 @@ const ChooseYourTour: React.FC = () => {
     }, [])
 
     return (
-        <section className="py-16 px-4 overflow-hidden">
+        <section className="py-12 px-4 overflow-hidden">
             <div className="container mx-auto">
                 <div
                     ref={sectionRef}
-                    className="text-center mb-12 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
+                    className="text-center mb-8 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-8 font-playfair">Choose Your Tour</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold mb-8 font-playfair">Choose Your Tour</h2>
                 </div>
 
                 <div className="grid grid-cols-1 gap-6">

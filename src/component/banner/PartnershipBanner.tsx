@@ -3,7 +3,7 @@ import Background2 from '../../assets/images/banner-bg/banner-partnership2.png'
 
 export const PartnershipBanner = () => {
     return (
-        <section className="relative h-[500px] md:h-[700px] overflow-hidden">
+        <section className="relative h-[350px] md:h-[600px] overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="w-full absolute inset-0">
                 

@@ -3,7 +3,7 @@ import Background2 from '../../assets/images/banner-bg/banner-service-hp.png'
 
 export const ServicesBanner = () => {
     return (
-        <section className="relative h-[400px] md:h-[700px] overflow-hidden">
+        <section className="relative h-[350px] md:h-[600px] overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="w-full absolute inset-0">
                 
@@ -23,7 +23,7 @@ export const ServicesBanner = () => {
             </div>
 
             {/* Content Container */}
-            <div className="relative container mx-auto px-4 h-full flex mt-20 justify-end">
+            <div className="relative container mx-auto mr-2 px-4 h-full flex mt-20 justify-end">
                 <div className="max-w-xl text-white md:text-black space-y-6 text-left">
                     <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight font-playfair">
                         <span>Transform Your </span>

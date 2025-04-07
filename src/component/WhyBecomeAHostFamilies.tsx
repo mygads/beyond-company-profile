@@ -56,11 +56,11 @@ const BenefitCard: React.FC<BenefitCardProps> = ({ title, description, icon, ico
         `}
         >
             <div className={`flex-1 ${iconPosition === "right" ? "pr-4" : "pl-4"}`}>
-                <h3 className="text-xl md:text-3xl font-semibold mb-2">{title}</h3>
-                <p className="text-md md:text-lg text-[#6C6245]">{description}</p>
+                <h3 className="text-lg font-semibold mb-2">{title}</h3>
+                <p className="text-[#6C6245]">{description}</p>
             </div>
             <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-full bg-[linear-gradient(230deg,#D2C088_21.81%,rgba(214,207,185,0.31)_48.56%,#D2C088_81.36%)] flex items-center justify-center">
+                <div className="w-16 h-16 md:w-20 md:h-20 p-4 rounded-full bg-[linear-gradient(230deg,#D2C088_21.81%,rgba(214,207,185,0.31)_48.56%,#D2C088_81.36%)] flex items-center justify-center">
                 {icon}
                 </div>
             </div>
@@ -125,15 +125,15 @@ const WhyBecomeHostFamily: React.FC = () => {
     return (
         <section
         ref={sectionRef}
-        className="py-16 px-4 overflow-hidden transition-all duration-700 ease-out transform opacity-0 translate-y-10"
+        className="py-12 px-4 overflow-hidden transition-all duration-700 ease-out transform opacity-0 translate-y-10"
         >
         <div className="container mx-auto">
             <div
             ref={headerRef}
-            className="text-center mb-12 transition-all duration-700 ease-out transform opacity-0 translate-y-6"
+            className="text-center mb-8 transition-all duration-700 ease-out transform opacity-0 translate-y-6"
             >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 font-playfair">Why become a host families?</h2>
-            <p className=" text-lg max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 font-playfair">Why become a host families?</h2>
+            <p className=" text-base mx-auto">
                 Whether you're a student, an educator, or a passionate explorer, our tours are designed to inspire and
                 educate.
             </p>

@@ -55,8 +55,8 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({ title, description, ico
                 </div>
             </div>
             <div>
-                <h3 className="text-xl font-semibold mb-2">{title}</h3>
-                <p className="text-[#888888] text-base">{description}</p>
+                <h3 className="text-lg font-semibold mb-2">{title}</h3>
+                <p className="text-[#888888] ">{description}</p>
             </div>
         </div>
     )
@@ -117,7 +117,7 @@ const ExperienceNewAdventure: React.FC = () => {
     }, [])
 
     return (
-        <section className="py-16 px-4 overflow-hidden">
+        <section className="py-12 px-4 overflow-hidden">
             <div className="container mx-auto">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                 {/* Left Column - Text Content */}
@@ -126,10 +126,10 @@ const ExperienceNewAdventure: React.FC = () => {
                             ref={sectionRef}
                             className="transition-all duration-700 ease-out transform opacity-0 translate-y-10 mb-8"
                         >
-                            <h2 className="text-4xl md:text-5xl font-bold mb-4 font-playfair text-center md:text-left">
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 font-playfair text-center md:text-left">
                                 Experience The New Adventure
                             </h2>
-                            <p className="text-gray-600 mb-8 text-xl">
+                            <p className="text-gray-600 mb-8 ">
                                 We offer more than just a trip! Beyond Dreams Tours creates enriching experiences that blend education,
                                 cultural immersion, and culinary delights. Here's why we stand out:
                             </p>

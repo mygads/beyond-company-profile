@@ -49,7 +49,7 @@ const QnAItem: React.FC<QnAItemProps> = ({ question, answer, delay, isOpen, togg
             className="border-b border-gray-200 py-6 transition-all duration-500 ease-out transform opacity-0 translate-y-6"
         >
             <div className="flex justify-between items-center cursor-pointer" onClick={toggleOpen}>
-                <h3 className="text-xl font-medium">{question}</h3>
+                <h3 className="font-medium">{question}</h3>
                     <button
                         className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-white transition-transform duration-300"
                         aria-expanded={isOpen}
@@ -135,13 +135,13 @@ const QnASection: React.FC = () => {
     }, [])
 
     return (
-        <section className="py-16 px-4 overflow-hidden">
+        <section className="py-12 px-4 overflow-hidden">
             <div className="container mx-auto max-w-4xl">
                 <div
                     ref={sectionRef}
-                    className="text-center mb-12 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
+                    className="text-center mb-8 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4 font-playfair">Frequently Asked Questions</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 font-playfair">Frequently Asked Questions</h2>
                     <p className="text-gray-600">Find answers to common questions about our educational tours</p>
                 </div>
 

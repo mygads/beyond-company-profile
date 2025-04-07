@@ -46,7 +46,7 @@ const HostRequirement: React.FC<HostRequirementProps> = ({ text, delay }) => {
             ref={itemRef}
             className="flex items-center gap-4 mb-6 transition-all duration-700 ease-out transform opacity-0 translate-x-[-20px]"
         >
-                <div className="min-w-[40px] w-10 h-10 bg-[#8a7a3b] rounded-md flex items-center justify-center text-white flex-shrink-0">
+                <div className="min-w-[40px] w-8 h-8 bg-[#8a7a3b] rounded-md flex items-center justify-center text-white flex-shrink-0">
                         <svg
                                 width="20"
                                 height="20"
@@ -62,7 +62,7 @@ const HostRequirement: React.FC<HostRequirementProps> = ({ text, delay }) => {
                                 <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
                 </div>
-                <p className="text-lg md:text-2xl">{text}</p>
+                <p className="text-md">{text}</p>
         </div>
     )
 }
@@ -148,14 +148,14 @@ const WhoCanHost: React.FC = () => {
     return (
         <section
         ref={sectionRef}
-        className="py-16 px-4 overflow-hidden transition-all duration-700 ease-out transform opacity-0 translate-y-10 bg-amber-50/50"
+        className="py-12 px-4 overflow-hidden transition-all duration-700 ease-out transform opacity-0 translate-y-10 bg-amber-50/50"
         >
         <div className="container mx-auto">
             <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Left Column - Title and Requirements */}
             <div>
                 <div ref={titleRef} className="mb-8 transition-all duration-700 ease-out transform opacity-0 translate-y-6">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 font-playfair flex items-center">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 font-playfair flex items-center">
                     <span className="mr-3">👨‍👩‍👧‍👦</span> Who Can Host?
                 </h2>
                 </div>
@@ -173,7 +173,7 @@ const WhoCanHost: React.FC = () => {
                 <img
                     src={Images}
                     alt="Diverse family hosting international students for dinner"
-                    className="w-full h-auto object-cover"
+                    className="md:w-[80%] w-full h-auto object-cover"
                 />
             </div>
             </div>

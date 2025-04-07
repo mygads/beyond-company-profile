@@ -63,7 +63,6 @@ const ContactUsPartnership: React.FC = () => {
         body += `Institution: ${formData.institution}\n\n`
         body += `Description:\n${formData.description}\n\n`
         body += `Best time to contact: ${formData.contactTime.join(", ") || "Not specified"}\n`
-        body += `Hosted before: ${formData.hostedBefore.join(", ") || "Not specified"}\n`
         body += `Heard about us from: ${formData.hearAboutUs.join(", ") || "Not specified"}\n`
 
         // Create mailto link
@@ -149,7 +148,7 @@ const ContactUsPartnership: React.FC = () => {
     return (
         <section
             ref={sectionRef}
-            className="py-16 px-4 overflow-hidden transition-all duration-700 ease-out transform opacity-0 translate-y-10 relative"
+            className="py-12 px-4 overflow-hidden transition-all duration-700 ease-out transform opacity-0 translate-y-10 relative"
         >
             {/* Background Image - Will be replaced with your PNG */}
             <div className="absolute inset-0 z-0">
@@ -167,7 +166,7 @@ const ContactUsPartnership: React.FC = () => {
                         <div className="text-white items-center hidden md:block">
                             <BsGeoAltFill size={100} />
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-bold text-black md:text-white font-playfair leading-tight">
+                        <h2 className="text-2xl md:text-3xl font-bold text-black md:text-white font-playfair leading-tight">
                         Welcome a exchange student to your home.
                         </h2>
                     </div>
@@ -300,45 +299,6 @@ const ContactUsPartnership: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Hosted Before */}
-                        <div>
-                            <p className="text-gray-700 mb-2">Have you hosted with us before?</p>
-                            <div className="space-y-1">
-                                <div className="flex items-center">
-                                <input
-                                    type="checkbox"
-                                    id="morning-hosted"
-                                    name="hostedBefore"
-                                    value="Morning"
-                                    onChange={handleCheckboxChange}
-                                    className="mr-2"
-                                />
-                                <label htmlFor="morning-hosted">Morning</label>
-                                </div>
-                                <div className="flex items-center">
-                                <input
-                                    type="checkbox"
-                                    id="afternoon-hosted"
-                                    name="hostedBefore"
-                                    value="Afternoon"
-                                    onChange={handleCheckboxChange}
-                                    className="mr-2"
-                                />
-                                <label htmlFor="afternoon-hosted">Afternoon</label>
-                                </div>
-                                <div className="flex items-center">
-                                <input
-                                    type="checkbox"
-                                    id="evening-hosted"
-                                    name="hostedBefore"
-                                    value="Evening"
-                                    onChange={handleCheckboxChange}
-                                    className="mr-2"
-                                />
-                                <label htmlFor="evening-hosted">Evening</label>
-                                </div>
-                            </div>
-                        </div>
 
                         {/* Hear About Us */}
                         <div>

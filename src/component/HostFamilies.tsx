@@ -84,21 +84,21 @@ const HostFamilies: React.FC = () => {
     return (
         <section
         ref={sectionRef}
-        className="py-16 px-4 overflow-hidden transition-all duration-700 ease-out transform opacity-0 translate-y-10"
+        className="py-12 px-4 overflow-hidden transition-all duration-700 ease-out transform opacity-0 translate-y-10"
         >
         <div className="container mx-auto">
             <div className="grid md:grid-cols-2 gap-8 items-center text-center md:text-left">
             {/* Left Column - Title */}
             <div ref={titleRef} className="transition-all duration-700 ease-out transform opacity-0">
-                <h2 className="text-4xl md:text-5xl font-bold mb-4 font-playfair">Host Families</h2>
-                <p className="md:text-2xl text-xl flex items-center justify-center md:justify-start">
-                <span className="mr-2">🌎</span> Open Your Home, Expand Your World
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 font-playfair">Host Families</h2>
+                <p className=" flex items-center justify-center md:justify-start">
+                <span className="mr-1 md:mr-2">🌎</span> Open Your Home, Expand Your World
                 </p>
             </div>
 
             {/* Right Column - Description */}
             <div ref={descriptionRef} className="transition-all duration-700 ease-out transform opacity-0">
-                <p className="text-lg md:text-2xl  leading-relaxed">
+                <p className="leading-relaxed">
                 Beyond Dreams is looking for warm and welcoming families to host international students participating in
                 our educational exchange programs. By becoming a host family, you'll immerse yourself in a new culture,
                 help students feel at home, and create lifelong friendships.

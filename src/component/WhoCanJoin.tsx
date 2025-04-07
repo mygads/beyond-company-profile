@@ -57,10 +57,10 @@ const JoinGroup: React.FC<JoinGroupProps> = ({ image, title, description, delay 
                 </div>
             </div>
             <div>
-                <h3 className="text-lg md:text-xl  font-bold mb-2 flex items-center">
+                <h3 className="font-bold mb-2 flex items-center">
                     <span className="text-red-500 mr-2">📌</span> {title}
                 </h3>
-                <p className="text-md md:text-lg">{description}</p>
+                <p className="">{description}</p>
             </div>
         </div>
     )
@@ -147,17 +147,17 @@ const WhoCanJoin: React.FC = () => {
     return (
         <section
             ref={sectionRef}
-            className="py-16 px-4 overflow-hidden transition-all duration-700 ease-out transform opacity-0 translate-y-10"
+            className="py-12 px-4 overflow-hidden transition-all duration-700 ease-out transform opacity-0 translate-y-10"
         >
             <div className="container mx-auto">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     {/* Left Column - Wave and Title */}
-                    <div className="relative justify-center items-center flex flex-col ">
-                        <div ref={waveRef} className="mb-12 transition-opacity duration-1000 ease-out opacity-0">
+                    <div className="relative justify-center items-center mb-8 md:mb-0 flex flex-col ">
+                        <div ref={waveRef} className="mb-2 md:mb-8 transition-opacity duration-1000 ease-out opacity-0">
                             <img src={Line} alt="Decorative wave pattern" className="w-full h-auto" />
                         </div>
                         <div ref={titleRef} className="transition-all duration-700 ease-out transform opacity-0 translate-y-6">
-                            <h2 className="text-4xl md:text-5xl font-bold font-playfair">Who Can Join?</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold font-playfair">Who Can Join?</h2>
                         </div>
                     </div>
 

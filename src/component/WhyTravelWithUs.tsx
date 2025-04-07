@@ -51,15 +51,15 @@ const Reason: React.FC<ReasonProps> = ({ emoji, title, description, delay }) => 
             className="flex items-start gap-2 md:gap-4 mb-4 md:mb-8 transition-all duration-700 ease-out transform opacity-0 translate-x-10"
         >
             <div className="flex-shrink-0 mt-1">
-                <div className="md:w-10 md:h-10 w-8 h-8 rounded-full bg-[linear-gradient(230deg,#D2C088_21.81%,rgba(214,207,185,0.31)_48.56%,#D2C088_81.36%)] flex items-center justify-center p-1">
-                    <IoMdCheckmarkCircleOutline size={50} />
+                <div className="md:w-8 md:h-8 w-6 h-6 rounded-full bg-[linear-gradient(230deg,#D2C088_21.81%,rgba(214,207,185,0.31)_48.56%,#D2C088_81.36%)] flex items-center justify-center p-1">
+                    <IoMdCheckmarkCircleOutline size={30} />
                 </div>
             </div>
             <div>
-                <h3 className="text-xl md:text-2xl font-semibold mb-2 flex items-center">
+                <h3 className="text-lg font-semibold mb-2 flex items-center">
                     <span className="mr-2">{emoji}</span> {title}
                 </h3>
-                <p className="text-md md:text-lg">{description}</p>
+                <p className="">{description}</p>
             </div>
         </div>
     )
@@ -120,13 +120,13 @@ const WhyTravelWithUs: React.FC = () => {
     }, [])
 
     return (
-        <section className="py-16 px-4 overflow-hidden">
+        <section className="py-12 px-4 overflow-hidden">
             <div className="container mx-auto">
                 <div
                     ref={sectionRef}
-                    className="text-center mb-12 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
+                    className="text-center mb-10 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-8 font-playfair">Why Travel With Us?</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold font-playfair">Why Travel With Us?</h2>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8 items-center">

@@ -10,14 +10,14 @@ const UltimatePackingGuide: React.FC = () => {
     return (
         <>
             <ArticlesBanner />
-            <main className="py-16 px-4">
+            <main className="py-12 px-4">
                 <div className="container mx-auto max-w-4xl">
                     <div className="my-12">
                         <Link to="/articles" className="text-amber-600 hover:underline">
                             ← Back to Articles
                         </Link>
                         </div>
-                    <h1 className="text-3xl md:text-4xl font-bold text-center mb-2">
+                    <h1 className="text-2xl md:text-3xl font-bold text-center mb-2">
                     Ultimate Packing Guide for Students on an Educational Tour
                     </h1>
                     <p className="text-center text-gray-600 mb-6">by Adam Cuppy</p>
@@ -31,7 +31,7 @@ const UltimatePackingGuide: React.FC = () => {
                     </div>
 
                     <div className="prose prose-lg max-w-none">
-                    <p className="text-lg">
+                    <p className="text-base">
                         Packing for an educational tour can be tricky—you don't want to overpack, but missing out on essentials can
                         ruin your experience. Here's a smart checklist to help students pack efficiently!
                     </p>
@@ -67,7 +67,7 @@ const UltimatePackingGuide: React.FC = () => {
                     </div>
 
                     <div className="mt-8">
-                        <h2 className="text-2xl font-bold mb-3">Pro Packing Tips</h2>
+                        <h2 className="text-lg font-bold mb-3">Pro Packing Tips</h2>
                         <ul className="mt-2 space-y-2">
                         <li className="flex items-start">
                             <span className="text-blue-600 mr-2">◆</span>
@@ -85,7 +85,7 @@ const UltimatePackingGuide: React.FC = () => {
                     </div>
 
                     <div className="mt-12 border-t pt-6">
-                        <p className="text-lg">
+                        <p className="text-base">
                         A well-packed bag ensures a smooth and enjoyable study tour experience. Pack smart, travel light, and
                         focus on learning!
                         </p>

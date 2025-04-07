@@ -214,7 +214,7 @@ const ArticlesSection: React.FC = () => {
         <main>
             <div 
                 ref={sectionRef}
-                className="py-16 px-4 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
+                className="py-12 px-4 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
             >
                 <div className="container mx-auto">
                     <div className="flex flex-col lg:flex-row gap-8">
@@ -223,7 +223,7 @@ const ArticlesSection: React.FC = () => {
                             ref={popularRef}
                             className="lg:w-2/3 transition-all duration-700 ease-out transform opacity-0 border-r p-4 border-gray-300"
                         >
-                            <h2 className="text-4xl font-bold mb-8 font-playfair">Popular Posts</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-8 font-playfair">Popular Posts</h2>
                             <div className="grid md:grid-cols-2 gap-6">
                                 {popularPosts.map((post) => (
                                     <div 
@@ -237,8 +237,8 @@ const ArticlesSection: React.FC = () => {
                                                 className="w-full h-50object-cover"
                                             />
                                             <div className="p-4">
-                                                <h3 className="text-xl font-bold mb-2">{post.title}</h3>
-                                                <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                                                <h3 className="text-md font-bold mb-2">{post.title}</h3>
+                                                <p className="text-gray-600  text-sm mb-4 line-clamp-3">{post.excerpt}</p>
                                                 <div className="flex items-center">
                                                     {typeof post.author.avatar === 'string' ? (
                                                         <img 
@@ -252,8 +252,8 @@ const ArticlesSection: React.FC = () => {
                                                         </div>
                                                     )}
                                                     <div>
-                                                        <p className="font-medium">{post.author.name}</p>
-                                                        <p className="text-sm text-gray-500">{post.author.role}</p>
+                                                        <p className="font-medium text-sm">{post.author.name}</p>
+                                                        <p className="text-xs text-gray-500">{post.author.role}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -268,7 +268,7 @@ const ArticlesSection: React.FC = () => {
                             ref={recentRef}
                             className="lg:w-1/3 transition-all duration-700 ease-out transform opacity-0 translate-x-20"
                         >
-                        <h2 className="text-4xl font-bold mb-8 font-playfair">Recent Posts</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold mb-8 font-playfair">Recent Posts</h2>
                         <div className="space-y-6">
                             {recentPosts.map((post) => (
                                 <Link 
@@ -278,7 +278,7 @@ const ArticlesSection: React.FC = () => {
                                 >
                                     <div className="flex-1">
                                         <h3 className="font-bold mb-1 line-clamp-2">
-                                            <span className="text-red-500 mr-1">📍</span> 
+                                            <span className="text-red-500 mr-1 text-md">📍</span> 
                                             {post.title}
                                         </h3>
                                         <p className="text-sm text-gray-500">{post.author.name}</p>

@@ -75,7 +75,7 @@ const MaximisingLearningDuringStudyTour: React.FC = () => {
             </div>
 
             <div ref={headerRef} className="mb-8 transition-all duration-700 ease-out transform opacity-0 translate-y-10">
-                <h1 className="text-3xl md:text-4xl font-bold text-center mb-2">
+                <h1 className="text-2xl md:text-3xl font-bold text-center mb-2">
                 <span className="mr-2">📚</span> Maximising Learning During a Study Tour
                 </h1>
                 <p className="text-center text-gray-600 mb-6">by Tony Hawk</p>
@@ -93,13 +93,13 @@ const MaximisingLearningDuringStudyTour: React.FC = () => {
                 ref={contentRef}
                 className="prose prose-lg max-w-none transition-all duration-700 ease-out transform opacity-0 translate-y-10"
             >
-                <p className="text-lg">
+                <p className="text-base">
                 A study tour is more than just a field trip—it's an opportunity to gain real-world insights beyond the
                 classroom. To make the most of your academic journey, follow these essential tips:
                 </p>
 
                 <div className="mt-8">
-                <h2 className="text-2xl font-bold mb-3">
+                <h2 className="text-lg font-bold mb-3">
                     <span className="mr-2">🚀</span> Prepare Before You Travel
                 </h2>
                 <p>
@@ -109,7 +109,7 @@ const MaximisingLearningDuringStudyTour: React.FC = () => {
                 </div>
 
                 <div className="mt-8">
-                <h2 className="text-2xl font-bold mb-3">
+                <h2 className="text-lg font-bold mb-3">
                     <span className="mr-2">📝</span> Keep a Study Journal
                 </h2>
                 <p>
@@ -119,7 +119,7 @@ const MaximisingLearningDuringStudyTour: React.FC = () => {
                 </div>
 
                 <div className="mt-8">
-                <h2 className="text-2xl font-bold mb-3">
+                <h2 className="text-lg font-bold mb-3">
                     <span className="mr-2">👋</span> Engage with Locals & Experts
                 </h2>
                 <p>
@@ -129,7 +129,7 @@ const MaximisingLearningDuringStudyTour: React.FC = () => {
                 </div>
 
                 <div className="mt-8">
-                <h2 className="text-2xl font-bold mb-3">
+                <h2 className="text-lg font-bold mb-3">
                     <span className="mr-2">🗣️</span> Participate in Discussions
                 </h2>
                 <p>
@@ -139,7 +139,7 @@ const MaximisingLearningDuringStudyTour: React.FC = () => {
                 </div>
 
                 <div className="mt-12 border-t pt-6">
-                <p className="text-lg">
+                <p className="text-base">
                     By following these strategies, you'll transform your study tour from a simple trip into a profound
                     learning experience that will benefit your academic and personal growth for years to come.
                 </p>

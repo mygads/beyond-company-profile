@@ -58,20 +58,20 @@ const OurServices: React.FC = () => {
     }, [])
 
     return (
-        <section className="py-16 px-4 overflow-hidden">
+        <section className="py-12 px-4 overflow-hidden">
             <div className="container mx-auto">
                 <div
                     ref={sectionRef}
-                    className="text-center mb-6 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
+                    className="text-center mb-8 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-12 font-playfair">Our Services</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold  font-playfair">Our Services</h2>
                 </div>
 
                 <div
                     ref={textRef}
                     className="text-center transition-all duration-700 ease-out transform opacity-0 translate-y-6"
                 >
-                    <p className="text-lg md:text-2xl leading-relaxed">
+                    <p className=" leading-relaxed">
                         We go beyond traditional tourism by curating unique travel programs that blend education, cultural exchange, and exploration. Whether you're a student, a group traveler, or an individual seeking meaningful experiences, we have the perfect journey for you.
                     </p>
                 </div>

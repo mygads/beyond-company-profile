@@ -54,12 +54,12 @@ const ValueCard: React.FC<ValueCardProps> = ({ title, description, icon, delay }
             "
             >
             <div className="mb-6">
-                <div className="w-20 h-20 rounded-full bg-[linear-gradient(230deg,#D2C088_21.81%,rgba(214,207,185,0.31)_48.56%,#D2C088_81.36%)] flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                <div className="md:w-20 md:h-20 w-16 h-16 p-4 rounded-full bg-[linear-gradient(230deg,#D2C088_21.81%,rgba(214,207,185,0.31)_48.56%,#D2C088_81.36%)] flex items-center justify-center transition-transform duration-300 hover:scale-110">
                     {icon}
                 </div>
             </div>
-            <h3 className="text-2xl font-medium mb-4">{title}</h3>
-            <p className="text-[#838383] text-lg">{description}</p>
+            <h3 className="text-xl font-medium mb-4">{title}</h3>
+            <p className="text-[#838383] text-md">{description}</p>
         </div>
     )
 }
@@ -95,13 +95,13 @@ const TopValuesForYou: React.FC = () => {
     }, [])
 
     return (
-        <section className="py-16 px-4 overflow-hidden">
+        <section className="py-12 px-4 overflow-hidden">
             <div className="container mx-auto max-w-6xl">
                 <div
                     ref={sectionRef}
-                    className="text-center mb-16 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
+                    className="text-center mb-8 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4 font-playfair">Top Values For You</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 font-playfair">Top Values For You</h2>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">

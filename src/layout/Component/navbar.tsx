@@ -41,12 +41,12 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className="bg-[#636262] sticky top-0 z-50 font-montserrat">
-            <div className="container mx-auto flex items-center justify-between px-4 h-16 md:h-20">
+            <div className="container mx-auto flex items-center justify-between px-4 h-14 md:h-18">
                 <Link to="/" className="flex items-center space-x-2 md:space-x-3 group">
                     <img
                         src={LogoIcon || "/placeholder.svg"}
                         alt="Beyond Dreams Tours Logo"
-                        className="md:h-16 h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+                        className="md:h-12 h-8 w-auto transition-transform duration-300 group-hover:scale-105"
                     />
                 </Link>
 
@@ -57,10 +57,10 @@ const Navbar: React.FC = () => {
                             <Link
                                 key={item.name}
                                 to={item.path}
-                                className={`relative px-12 py-1  text-md transition-all duration-200 rounded-full
+                                className={`relative px-10 py-1 text-sm transition-all duration-200 rounded-full
                                     ${
                                     isActive(item.path)
-                                        ? "text-white font-bold "
+                                        ? "text-white font-bold"
                                         : "hover:text-[#ebd698] text-white font-normal"
                                     }`}
                                 style={isActive(item.path) ? { background: 'linear-gradient(97deg, #695C34 -19.68%, #D2C088 102.52%)' } : {}}
@@ -74,16 +74,16 @@ const Navbar: React.FC = () => {
                 <div className="hidden lg:flex items-center space-x-4">
                     <Link
                         to="/partnership"
-                        className="flex items-center px-6 py-2 text-black rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:border-[#D2C088] hover:border-2 active:shadow-inner font-medium gap-2 bg-[#bcab79] hover:text-[#D2C088]"
+                        className="flex items-center px-6 py-2 text-sm text-black rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:border-[#D2C088] hover:border-2 active:shadow-inner font-medium gap-2 bg-[#bcab79] hover:text-[#D2C088]"
                     >
                         <FaHandshakeAngle />
                         PARTNERSHIP
                     </Link>
                     <a
-                        href="https://wa.me/61491105261" 
+                        href="https://wa.me/61452674373"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center px-6 py-2 bg-[#D9D9D9] rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:border-[#D9D9D9] hover:border-2 active:shadow-inner font-medium gap-2 hover:text-[#D9D9D9]"
+                        className="flex items-center px-6 py-2 text-sm bg-[#D9D9D9] rounded-full transition-all duration-300 ease-in-out hover:bg-transparent hover:border-[#D9D9D9] hover:border-2 active:shadow-inner font-medium gap-2 hover:text-[#D9D9D9]"
                     >
                         <FaPhoneAlt />
                         CONTACT US
@@ -120,7 +120,7 @@ const Navbar: React.FC = () => {
                 >
                     <div
                         ref={menuRef}
-                        className={`fixed right-0 top-0 h-full w-64 bg-[#636262] shadow-xl transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+                        className={`fixed right-0 top-0 h-full w-2/3 bg-[#636262] shadow-xl transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
                         onClick={(e) => e.stopPropagation()}
                     >
                         <div className="p-6 space-y-4">
@@ -129,7 +129,7 @@ const Navbar: React.FC = () => {
                                     key={item.name}
                                     to={item.path}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className={`block py-2 text-lg transition-colors duration-200 
+                                    className={`block py-2 text-sm transition-colors duration-200 
                                         ${
                                         isActive(item.path)
                                             ? "text-[#D2C088] font-bold"
@@ -142,20 +142,20 @@ const Navbar: React.FC = () => {
                             <Link
                                 to="/partnership"
                                 onClick={() => setMobileMenuOpen(false)}
-                                className="w-full px-6 py-3 bg-[#bcab79] text-black text-center rounded-full text-lg font-medium transition-all duration-300 ease-in-out hover:bg-transparent hover:shadow-lg active:scale-95 active:shadow-inner flex justify-center items-center gap-2"
+                                className="w-full px-auto py-3 bg-[#bcab79] text-black text-center rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:bg-transparent hover:shadow-lg active:scale-95 active:shadow-inner flex justify-center items-center gap-2"
                             >
                                 <FaHandshakeAngle />
                                 PARTNERSHIP
                             </Link>
                             <a
-                                href="https://wa.me/61491105261" // Replace with your actual contact number
+                                href="https://wa.me/61452674373" // Replace with your actual contact number
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => setMobileMenuOpen(false)}
-                                className="w-full px-6 py-3 bg-[#D9D9D9] text-black text-center rounded-full text-lg font-medium transition-all duration-300 ease-in-out hover:bg-transparent hover:shadow-lg active:scale-95 active:shadow-inner flex justify-center items-center gap-2"
+                                className="w-full px-auto py-3 bg-[#D9D9D9] text-black text-center rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:bg-transparent hover:shadow-lg active:scale-95 active:shadow-inner flex justify-center items-center gap-2"
                             >
                                 <FaPhoneAlt />
-                                CONTACT US
+                                +61 452 674 373
                             </a>
                         </div>
                     </div>

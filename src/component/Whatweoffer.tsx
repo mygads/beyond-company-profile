@@ -57,11 +57,11 @@ const Offering: React.FC<OfferingProps> = ({ title, description, icon, position,
             `}
             >
             <div className={`md:flex-1 ${position === "left" ? "md:pr-4" : "md:pl-4"}`}>
-                <h3 className="text-2xl font-medium mb-3 md:text-left">{title}</h3>
-                <p className="text-[#6C6245] md:text-left text-lg">{description}</p>
+                <h3 className="text-xl font-medium mb-3 md:text-left">{title}</h3>
+                <p className="text-[#6C6245] md:text-left text-md">{description}</p>
             </div>
-            <div className="mt-6 md:mt-0 flex-shrink-0">
-                <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-[linear-gradient(230deg,#D2C088_21.81%,rgba(214,207,185,0.31)_48.56%,#D2C088_81.36%)] flex items-center justify-center transition-transform duration-300 hover:scale-105">
+            <div className="mt-4 md:mt-0 flex-shrink-0 md:mx-auto md:my-auto">
+                <div className="w-16 h-16 md:w-26 md:h-26 p-4 md:p-8  rounded-full bg-[linear-gradient(230deg,#D2C088_21.81%,rgba(214,207,185,0.31)_48.56%,#D2C088_81.36%)] flex items-center justify-center transition-transform duration-300 hover:scale-105">
                     {icon}
                 </div>
             </div>
@@ -100,14 +100,14 @@ const WhatWeOfferSection: React.FC = () => {
     }, [])
 
     return (
-        <section className="py-16 px-4 overflow-hidden">
+        <section className="pb-10 md:pb-16 px-4 overflow-hidden">
             <div className="container mx-auto">
                 <div
                     ref={sectionRef}
                     className="text-center mb-8 transition-all duration-700 ease-out transform opacity-0 translate-y-10"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4 font-playfair">What We Offer</h2>
-                    <p className="text-gray-600 text-lg mx-auto">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 font-playfair">What We Offer</h2>
+                    <p className="text-gray-600 text-base mx-auto">
                         Whether you're a student, an educator, or a passionate explorer, our tours are designed to inspire and educate.
                     </p>
                 </div>

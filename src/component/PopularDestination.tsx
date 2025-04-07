@@ -3,12 +3,10 @@
 import type React from "react"
 import { useEffect, useRef, useState } from "react"
 import { ChevronLeft, ChevronRight, Star } from "lucide-react"
-import Image1 from "../assets/images/images1.png"
+import Image1 from "../assets/images/margaret-river.jpg"
 import Image2 from "../assets/images/images2.png" 
-import Image3 from "../assets/images/images3.png"
-import Image4 from "../assets/images/images4.png"
-import Image5 from "../assets/images/images5.png"
-import Image6 from "../assets/images/images6.png"
+import Image3 from "../assets/images/bunbury-dolphin.jpg"
+import Image4 from "../assets/images/busselton.avif"
 
 interface Destination {
   id: string
@@ -31,58 +29,42 @@ const PopularDestinations: React.FC = () => {
     const destinations: Destination[] = [
         {
         id: "1",
-        title: "Perth Hop-On Hop-Off Bus Tour",
+        title: "Perth City",
         description:
-            "Explore all the highlights of Perth on this customizable hop-on hop-off bus tour. Discover downtown attractions and landmarks such as Bell Tower, Kings Park, the Swan River, and the Art Gallery of Western Australia.",
+            "Western Australia’s vibrant capital city is the perfect gateway for young minds to explore science, culture, and innovation. From the Scitech Discovery Centre to Kings Park, students can engage in hands-on learning and immerse themselves in Indigenous history, sustainability, and city life."
+        ,
         rating: 5.0,
         duration: "2 Hours",
-        image: Image1
-        },
-        {
-        id: "2",
-        title: "Perth: Arcades and Laneways Walking Tour - Perth Attractions",
-        description:
-            "Where is the best street art? You'll discover all the answers on Perth's most informative tour! Explore the hidden gems and secrets of Perth via the pedestrian-friendly malls, ornate arcades, trendy laneways, back streets and more.",
-        rating: 4.3,
-        duration: "2.5 Hours",
         image: Image2
         },
         {
-        id: "3",
-        title: "Pinnacles Desert Sunset Dinner and Stargazing Tour",
+        id: "2",
+        title: "Margaret River National Park",
         description:
-            "The Pinnacles Desert is known for its unique limestone rock formations and lies in the Nambung National Park around a 2 AM drive from Perth.",
+            "Known for its stunning natural beauty and environmental richness, Margaret River offers powerful lessons in geography, agriculture, and sustainability. Tours can include visits to organic farms, caves, forests, and local artisans, making it ideal for both environmental and cultural education.",
+        rating: 4.3,
+        duration: "2.5 Hours",
+        image: Image1
+        },
+        {
+        id: "3",
+        title: "Bunbury and Dolphin Discovery Centre",
+        description:
+            "A growing coastal city where students can explore marine biology, conservation, and regional development. Activities like dolphin encounters at the Dolphin Discovery Centre, estuary walks, and regional museum visits make it an interactive and memorable destination.",
         rating: 5.0,
         duration: "5+ Hours",
         image: Image3
         },
         {
         id: "4",
-        title: "Old Central Fire Station Heritage Centre",
+        title: "Busselton Jetty",
         description:
-            "Discover over 125 years of fire brigade history at the heritage-listed Old Central Fire Station. Perth's first purpose-built fire station is now a Heritage Centre and offers fascinating displays of historic firefighting equipment.",
+            "Home to the famous Busselton Jetty, this town offers a unique underwater observatory experience, making marine education come alive. It’s perfect for programs on oceanography, marine ecosystems, and environmental science, plus it’s a beautiful spot for group bonding and reflection.",
         rating: 4.1,
         duration: "4.1 Hours",
         image: Image4
         },
-        {
-        id: "5",
-        title: "Perth East Foreshore and City Segway Tour",
-        description:
-            "See the highlights of Perth on a Segway tour along the city's economy and beautiful riverfront. Whizz along the Swan River, and check out attractions like Kings Park.",
-        rating: 5.0,
-        duration: "1.5 Hours",
-        image: Image5
-        },
-        {
-        id: "6",
-        title: "The Perth Mint",
-        description:
-            "Enjoy a guided tour of our grand heritage building, vaulted walls, and 1899 melting house. Witness a traditional gold pour and more.",
-        rating: 4.2,
-        duration: "1-2 Hours",
-        image: Image6
-        },
+        
     ]
 
     // Scroll animation
@@ -180,18 +162,18 @@ const PopularDestinations: React.FC = () => {
     // Handle WhatsApp booking
     const handleBookNow = (destination: Destination) => {
         const message = `Hello, I'm interested in booking the "${destination.title}" tour. Please provide more information about availability and pricing. Thank you!`
-        const whatsappUrl = `https://wa.me/61491105261?text=${encodeURIComponent(message)}`
+        const whatsappUrl = `https://wa.me/61452674373?text=${encodeURIComponent(message)}`
         window.open(whatsappUrl, "_blank")
     }
 
     return (
-        <section className="py-16 px-4 overflow-hidden">
+        <section className="py-12 px-4 overflow-hidden">
         <div
             ref={sectionRef}
             className="container mx-auto transition-all duration-700 ease-out transform opacity-0 translate-y-10"
         >
             <div className="flex justify-between items-center mb-8">
-            <h2 className="text-4xl font-bold font-playfair">Popular Destinations</h2>
+            <h2 className="text-2xl md:text-3xl font-bold font-playfair">Popular Destinations</h2>
             <div className="flex space-x-2">
                 <button
                 onClick={handlePrev}
@@ -239,7 +221,7 @@ const PopularDestinations: React.FC = () => {
 
                     <div className="p-4 flex-grow">
                     <div className="flex justify-between items-start mb-2">
-                        <h3 className="text-lg font-bold pr-2">{destination.title}</h3>
+                        <h3 className="font-bold pr-2">{destination.title}</h3>
                         <div className="flex items-center bg-white px-2 py-1 rounded-full shadow-sm">
                         <Star className="w-4 h-4 text-amber-500 fill-amber-500" />
                         <span className="ml-1 text-sm font-medium">{destination.rating.toFixed(1)}</span>
